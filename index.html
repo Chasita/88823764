@@ -1,16 +1,62 @@
 <!DOCTYPE html>
 <html>
-<title> Chasita History </title>
-<body bgcolor="LightCyan">
+<head>
+<title> Workshop #HTML-FORM </title>
+</head>
+<body>
 
-<h1 style="background-color:skyblue;"><center>˶• ᴥ •˶ Personal History ˶• ᴥ •˶</center></h1>
-<center><img src="grace.jpg" alt="Flowers in grace" width="250" height="320"></center>
-<h1>꒰Hi! Welcome Personal Information꒱</h1>
-<h2> ⊹ My name : Chasita Tochaona.</h2>
-<h2> ⊹ Student ID : 64160064</h2>
-<h2> ⊹ My nickname : Grace.</h2> 
-<h2> ⊹ Age : 19 Year.</h2>
-<h2> ⊹ Impression : The color of the sky. <a href="https://www.instagram.com/t_047/">T_047.</a></h2>
-<h1><center>Thank You • ᴥ • </center></h1>
+<h1> Workshop #HTML-FORM </h1>
+<form action="/action_page.php">
+    <label for="fname"> ชื่อ </label>&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" id="fname" name="fname" ><br><br>
+    <label for="lname"> สกุล </label>&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
+    <input type="text" id="lname" name="lname" ><br><br>
+
+    <label for="start"> วัน/เดือน/ปีเกิด </label>&emsp;
+    <input type="date" id="start" name="trip-start"
+        value="dd / mm / yyy"
+        min="1999-01-01" max="2003-12-31"><br><br>
+
+    <label for="age"> อายุ </label>&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
+    <input type="text" id="age" name="age" ><br><br>
+
+    <label for="sex"> เพศ </label>&emsp;&emsp;&emsp;&emsp;&emsp;
+    <input type="radio" id="man" name="fav_language" value="man">
+    <label for="man"> ชาย </label>
+    <input type="radio" id="woman" name="fav_language" value="woman">
+    <label for="woman"> หญิง </label><br><br>
+
+    <label for="picture"> รูป </label>&emsp;&ensp;&emsp;&emsp;&emsp;&emsp;
+    <input type="file"
+        id="avatar" name="avatar"
+        accept="image/png,image/jpeg"><br><br>
+
+    <label for="address"> ที่อยู่ </label>&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
+    <textarea rows="5" cols="20"></textarea><br><br>
+
+    <label for="color"> สีที่ชอบ </label>&emsp;&ensp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <select>
+        <option selected disabled > เลือก </option>
+        <option value="1"> สีแดง </option>
+        <option value="2"> สีฟ้า </option>
+        <option value="3"> สีเขียว </option>
+        <option value="4"> สีดำ </option>
+        <option value="5"> สีขาว </option>
+    </select><br><br>
+    <label for="music"> แนวเพลงที่ชอบ </label>
+    <input type="radio" id="life" name="fav_language" value="life">
+    <label for="life"> เพื่อชีวิต </label>
+    <input type="radio" id="lookthung" name="fav_language" value="lookthung">
+    <label for="lookthung"> ลูกทุ่ง </label>
+    <input type="radio" id="omg" name="fav_language" value="omg">
+    <label for="omg"> อื่นๆ </label><br><br>
+
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1"> ยินยอมให้เก็บข้อมูล </label><br><br>
+
+    <input type="Reset" value="Reset">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+    <input type="submit" value="Submit">
+  </form> 
+
 </body>
 </html>
